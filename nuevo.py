@@ -22,6 +22,9 @@ class Pastis:
     def xocolata(self, value):
         if value is True or value is False:
             self.__xocolata = value
+            
+    def __str__(self):
+        return f"Pastis despres{self.__pes}. Xocolata?"
 
 pastis_1 = Pastis(-60)
 print(pastis_1.pes)
